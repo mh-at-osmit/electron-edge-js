@@ -1,0 +1,22 @@
+Requirements:
+
+- MS VS Build Tools 2022
+- Desktopentwicklung mit C++
+- .NET Framework-4.8.1-SDK
+
+Building:
+
+x64:
+- Launch x64 Native Tools Command Prompt for VS 2022
+- Run tools\build.bat release 32.0.0
+- set npm_config_target_arch=x64
+- set npm_config_arch=x64
+- Commit files in lib/native/win32/x64
+
+ia32:
+- Launch x86 Native Tools Command Prompt for VS 2022
+- Run tools\build.bat release 32.0.0
+- set npm_config_target_arch=ia32
+- set npm_config_arch=ia32
+- Commit files in lib/native/win32/ia32
+- Checkout files in lib/native/win32/x64
